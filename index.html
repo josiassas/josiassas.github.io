@@ -47,9 +47,9 @@
         </section>
     </div>
 
-    <div id="resume" class="modal">
+    <div id="resume" class="modal" onblur="close()">
         <div class="modal-content">
-            <a href="#fechar" title="Fechar" class="close">
+            <a href="#close" title="Fechar" class="close">
                 <i class="fa fa-times"></i>
             </a>
 
@@ -114,20 +114,26 @@
     </div>
 </body>
 
-
-
 <!-- Scripts -->
 <script>
+    var modal = document.getElementById('resume');
     if ('addEventListener' in window) {
         window.addEventListener('load', function () {
             document.body.className = document.body.className.replace(/\bis-loading\b/, '');
         });
         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
     }
-</script>
 
-<script>
+    modal.addEventListener('click', function (e) {
+        if (e.target == this) close();
+    });
+
+    function close() {
+        modal.style.display = 'none';
+    }
+
     function openResumeList(evt, listName) {
+        modal.style.display = 'block';
         var i, list, tablink;
         list = document.getElementsByClassName("list");
         for (i = 0; i < list.length; i++) {
