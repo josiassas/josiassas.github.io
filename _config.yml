@@ -1,0 +1,133 @@
+# Nome do site
+title: Josias Souza
+
+# Breve descrição do seu site
+description: Aqui você irá encontrar a maioria das informações sobre a minha vida profissional. Alem de outras informações como links para os meus perfis nas redes sociais, algumas fotos de viagens realizadas, e talvez alguns interesses pessoais.
+
+# Idioma do site
+language: pt-br
+
+# --- Opções gerais --- #
+
+# Selecione quais links de compartilhamento de rede social serão exibidos nas postagens
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
+
+
+# Comprimento do trecho da palavra - trunca o trecho para o número especificado de palavras na página de índice
+excerpt_length: 17
+
+
+# --- Seção Estatísticas da Web --- #
+
+# Preencha seu ID gtag.js do Google Analytics para rastrear seu site usando gtag
+#gtag: ""
+
+# Preencha seu ID do Google Analytics para rastrear seu site usando o GA
+#google_analytics: ""
+
+# Google Tag Manager ID
+#gtm: ""
+
+# Matomo (aka Piwik) Estatísticas da Web
+# Remova o comentário da seção a seguir para ativar o Matomo. O parâmetro opt-out controla
+# se você deseja ou não permitir que os usuários desative o rastreamento.
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
+
+# --- Comentários --- #
+
+# Para usar os comentários do Disqus, inscreva-se em https://disqus.com e preencha seu nome abreviado do Disqus (NÃO o ID do usuário)
+#disqus: ""
+
+# Para usar os comentários do Facebook, crie um aplicativo do Facebook e preencha o ID do aplicativo do Facebook
+#fb_comment_id: ""
+
+# Para usar comentários de enunciados: (0) descomente a seção a seguir, (1) preencha
+# "repositório" (verifique se o repositório é público), (2) Ative os problemas no seu repositório,
+# (3) Instale o aplicativo Expressões no seu repositório https://github.com/apps/utterances
+# Veja mais detalhes sobre os parâmetros abaixo em https://utteranc.es/
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
+
+# Para usar os comentários do Staticman, primeiro convide `staticmanlab` como colaborador para o seu repositório e
+# aceite o convite acessando `https://staticman3.herokuapp.com/v3/connect/github/ <nome do usuário> / <nome do repositório>`.
+# Em seguida, remova o comentário da seção a seguir e preencha "repositório", "ramificação" e "ponto final".
+# Se você deseja usar o reCaptcha para staticman (opcional para proteção contra spam), preencha
+# nos parâmetros "siteKey" e "secret" abaixo e também em `staticman.yml`.
+# Veja mais detalhes em https://staticman.net/
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+#  reCaptcha:
+#    siteKey  : # Use your own site key, you need to apply for one on Google
+#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+
+# --- Misc --- #
+
+# Caractere usado para separar o título e a descrição do site no título do documento HTML
+# e título do feed RSS
+title-separator: "-"
+
+# Ruby Date Format to show dates of posts
+date_format: "%d/%m/%Y"
+
+# Facebook App ID
+#fb_app_id: ""
+
+
+# --- Você não precisa tocar em nada abaixo aqui (mas pode, se quiser) --- #
+
+# Opções de saída (mais informações no site de Jekyll)
+timezone: "America/Sao_Paulo"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:title/
+paginate: 6
+
+kramdown:
+  input: GFM
+
+# Valores YAML padrão (mais informações no site de Jekyll)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: false  # adicionar comentários a todas as postagens do blog
+      social-share: true # adicionar botões de compartilhamento de mídia social a todas as postagens do blog
+      readtime: true # adicione tempo estimado de leitura em todas as postagens do blog
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: false
+
+# Excluir esses arquivos do site de produção
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
+  - _posts/yyyy-mm-dd-title-exemple.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
