@@ -1,0 +1,46 @@
+<p>Se você não consegue se acostumar a utilizar a IDE do <a title="Arduino" href="https://www.arduino.cc/" target="_blank">Arduino</a> essa publicação será sua emancipação.</p>
+
+<p>Há muitas coisas poderosas que você pode fazer com as plataformas de prototipagem eletrônica e afins. E quando os projetos ficam grandes a IDE utilizada faz grande diferença na sua produtividade durante o desenvolvimento.</p>
+
+<p>Por esse motivo apresentamos o <a title="PlatformIO IDE" href="https://platformio.org/" target="_blank">PlatformIO IDE</a> que é um conjunto de ferramentas para desenvolvimento IoT incorporado de C/C++, ele possui terminal embutido e monitor de porta serial.</p>
+
+<p><strong><em>Por que eu devo ler este artigo</em></strong>: <span class="spoiler">O <a title="Visual Studio Code" target="_blank" href="https://code.visualstudio.com/">Visual Studio Code</a> é um editor de texto disponibilizado pela Microsoft, conhecer essa ferramenta é importante para os desenvolvedores que pretendem trabalhar em ambientes multiplataforma. Além de explorar as funcionalidades basicas do editor, <strong>focaremos</strong> em como podemos criar projetos para plataformas como <a title="Arduino" href="https://www.arduino.cc/" target="_blank">Arduino</a>, <a title="Raspberry Pi" href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>, <a title="ESP32" href="https://www.espressif.com/en/products/hardware/development-boards" target="_blank">ESP32</a> e muitas outras. Visite o <a title="PlatformIO IDE" href="https://platformio.org/platforms" target="_blank">site</a> para ver a lista completa.</span></p>
+
+<h2 id="instalação-do-visual-studio-code">Instalação do Visual Studio Code</h2>
+
+<p>Para que possamos utilizar o Visual Studio Code, ou VS Code para os mais chegados, temos que instalar ele em nosso computador. O VS Code é multiplataforma, dessa forma pode ser utilizado a partir do Windows, Mac ou Linux. Para baixar a última versão do VS Code, acesse o <a title="Visual Studio Code" target="_blank" href="https://code.visualstudio.com/">site oficial</a> e você encontrará um botão de download:</p>
+
+<p><img src="/assets/img/VsCode-download.png" alt="walking" />
+Basta fazer o download para operacional desejado e em seguida instalar a plataforma.</p>
+
+<h2 id="primeiros-passos-com-o-vs-code">Primeiros passos com o VS Code</h2>
+
+<p>Diferentemente do que o nome pode sugerir, o VS Code não é uma versão do Visual Studio, em sua essência ele é simplismente um editor de código semelhante ao <a title="Sublime Text" href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>, <a title="Brackets" href="http://brackets.io/" target="_blank">Brackets</a> e <a title="Atom" href="https://atom.io/" target="_blank">Atom</a>.</p>
+
+<p><img src="/assets/img/VsCode.png" alt="walking" />
+Na Figura podemos a ferramenta e a esquerda temos uma barra de ferramenta com as opções (de cima para baixo): <em>Explorer</em>, que exibe ou oculta os arquivos abertos; <em>Search</em>, para efetuar buscas nos arquivos abertos; <em>Source Control</em>, que facilita a realização de commits para o repositório do projeto; <em>Debug and Run</em>, onde é possível analisar variáveis em tempo de execução; e <em>Extensions</em>, que é o local que iremos utilizar para instalar o <a title="PlatformIO IDE" href="https://platformio.org/" target="_blank">PlatformIO IDE</a>.</p>
+
+<h2 id="primeiros-passos-com-o-platformio">Primeiros passos com o PlatformIO</h2>
+
+<p><img src="/assets/img/VsCode-extensions.png" alt="walking" />
+Para instalar basta ir em Extensions e pequisar por <em>PlatformIO</em>, e clicar em install.</p>
+
+<p><img src="/assets/img/VsCode-platformIO-newProject.png" alt="walking" />
+Para iniciar um projeto basta clicar na nova opção que apareceu na barra de ferramentas, clicar em <em>New Project</em>.</p>
+
+<p><img src="/assets/img/VsCode-platformIO-newProject-modal.png" alt="walking" /></p>
+
+<p>Em seguida basta nomear o projeto, escolher a placa desejada e caso queira mudar a localização que o projeto será salvo.</p>
+
+<p><img src="/assets/img/VsCode-platformIO-Project.png" alt="walking" />
+Seu projeto esta salvo na pasta que você encaminhou, ou caso você tenha mantido o diretorio padrão ela estara em seu diretorio pessoal “<em>~/documents/PlatformIO/Projects/SEU-PROJETO</em>”, mas você deve ter acesso a ela pelo <em>Explorer</em> do VS Code. Dentro dela foi criado outras sub pastas, sendo que a mais importante para você começão a seu projeto é a <em>src</em> (source), nela você encontrará o arquivo <em>main.cpp</em> que é o arquivo principal do seu projeto, na imagem acima terá ela criada para iniciar um projeto com uma placa Arduino.</p>
+
+<p>Na barra inferior estará os controles do PlatformIO, sendo que da área selecionada da esquerda para direita temos: <em>home</em>, esse botão abre a tela inicial da extensão; <em>Build</em>, permite verificar o codigo, encontrando possivelmente erro de sitaxe do codigo escrito; <em>Upload</em>, esse é o botão que você irá utilizar para enviar o codigo para a placa/microcontrolador selecionado; <em>Upload to remote device</em>, permite trabalhar remotamente com dispositivos de qualquer lugar do mundo; <em>Clean</em>, limpa o console; <em>Test</em>,  permite segregar cada parte do firmware/programa e testar se as partes individuais estão funcionando corretamente; <em>Run Task</em>, execultar tarefas; <em>Serial Monitor</em>, com medo de ser redudante não irei explicar essa; e por ultimo <em>New Terminal</em>, ai é mais uma opção de você abrir outra janela do terminal.</p>
+
+<h2 id="conclusão-e-agradecimento">Conclusão e Agradecimento</h2>
+
+<p>Com o PlatformIO <em>(nessa altura do campeonato você já deve estar se sentido intimo dele, então pode começar a chama-lo de PIO)</em> você consegue fazer aquele projeto sem a nescessidade de se prender a plataformas como a IDE do Arduino, nem você precisa ficar “preso” no VS Code (mesmo que penso nele como liberdade), você pode utilizar essa extensão por exemplo com o <a title="Atom" href="https://atom.io/" target="_blank">Atom</a> (que é muito bom também), <a title="Eclipse Che" href="https://www.eclipse.org/che/" target="_blank">Eclipse Che</a>, <a title="Code::Blocks" href="http://www.codeblocks.org/" target="_blank">Code::Blocks</a> e muitas outras, visite essa <a title="PlatformIO" href="https://platformio.org/install/integration" target="_blank">pagina</a> para ver a lista.</p>
+
+<p>Com isso aquele seu projeto que é gigante, contendo varios arquivos e ainda por cima <strong>Orientado a Objetos</strong> fica muito bem organizado (dentro do limite claro, C++ orientado a objetos é bem estranho).</p>
+
+<p>Espero que tenham gostado desse artigo, para duvidas/sugestões basta entrar em contato.</p>

@@ -1,0 +1,55 @@
+
+<script type="text/javascript">
+    var coringa = 1;
+    function changeImage() {
+        document.getElementById("img").src = "/images/" + coringa + "img.jpg";
+        coringa != 3 ? coringa++ : coringa = 0;
+    }
+</script>
+
+<script>
+    var modal = document.getElementById('resume');
+    var tablink = document.getElementsByClassName("tablink");
+
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function () {
+            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+        });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+
+    modal.addEventListener('click', function (e) {
+        if (e.target == this) close();
+    });
+
+    function close() {
+        modal.style.transition = "opacity 400ms ease-in;";
+        modal.style.display = 'none';
+    }
+
+    function openResumeList(evt, listName) {
+        modal.style.display = 'block';
+        var i, list;
+        list = document.getElementsByClassName("list");
+        for (i = 0; i < list.length; i++) {
+            list[i].style.display = "none";
+        }
+
+        for (i = 0; i < tablink.length; i++) {
+            tablink[i].className = tablink[i].className.replace(" active", "");
+        }
+        document.getElementById(listName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161579456-1');
+</script>
