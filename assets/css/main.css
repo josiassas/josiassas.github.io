@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 /* Reset */
 
@@ -168,6 +169,7 @@ em, i {
 
 p {
     margin: 0 0 1.5em 0;
+    text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -428,7 +430,7 @@ input[type="radio"]+label:before {
 }
 
 .widthIco {
-    max-width: 20%;
+    max-width: 33.33%;
 }
 
 /* List */
@@ -703,6 +705,12 @@ body.is-loading #main {
     transform: rotateX(15deg);
 }
 
+@media screen and (min-width: 720px) {
+    #main {
+        max-width: 70%;
+    }
+}
+
 /* Footer */
 
 #footer {
@@ -802,11 +810,11 @@ body.is-ie #wrapper {
     background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
     opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
     overflow: auto;
+    -ms-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
 }
 
 .modal:target {
@@ -818,9 +826,9 @@ body.is-ie #wrapper {
     position: relative;
     margin: 3% auto;
     border-color: #eee;
-    background-color: #fffff0;
+    background-color: #ffffff;
     width: 80vw;
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
 .close {
@@ -852,20 +860,19 @@ body.is-ie #wrapper {
     padding-left: 15px;
     display: block;
     height: auto;
-    max-height: 70vh;
     width: 100%;
     text-align: justify;
 }
 
 .section img {
     padding-left: -15px;
-    height: auto;
-    width: 50%;
+    height: 50vh;
+    width: auto;
     margin-right: 4%;
 }
 
 .section span {
-    width: 40%;
+    width: auto;
 }
 
 .section p {
@@ -938,4 +945,19 @@ label:after {
     #about .section {
         display: inline-flex;
     }
+}
+
+.info-personal {
+    padding: 0;
+}
+
+.info-personal li {
+    list-style: none;
+    padding: 0;
+}
+
+.title-personal {
+    background-color: #D3D3D3;
+    line-height: 200%;
+    padding: 2px 8px;
 }

@@ -18,29 +18,39 @@
             </span>
         </div>
 
-        <!-- Principal -->
+        <!-- Main -->
         <section id="main">
             <header>
-                <span class="avatar"><img src="../images/avatar.jpg" alt="" /></span>
+                <span class="avatar"><img id="img" src="/images/0img.jpg" alt="avatar" onclick="changeImage()"
+                        style="height: 280px;" /></span>
                 <h1>JOSIAS SOUZA</h1>
-                <p>Aspiring Electrical Engineer<br><a href="mailto:josias@vivaldi.net">josias@vivaldi.net</a></p>
             </header>
 
             <footer id="footer">
                 <ul class="icons">
-                    <li class="widthIco"><a href="https://twitter.com/josiassas" target="_blank"
-                            class="fa-twitter">Twitter</a></li>
-                    <li class="widthIco"><a href="https://github.com/josiassas" target="_blank"
-                            class="fa-github">Github</a></li>
+                    <li class="widthIco"><a href="https://twitter.com/josiassas" target="_blank" class="fa-twitter"
+                            title="Twitter">Twitter</a></li>
+                    <li class="widthIco"><a href="https://github.com/josiassas" target="_blank" class="fa-github"
+                            title="Github">Github</a></li>
                     <li class="widthIco"><a href="https://www.instagram.com/josiassas/" target="_blank"
-                            class="fa-instagram">Instagram</a></li>
+                            class="fa-instagram" title="Instagram">Instagram</a></li>
                     <li class="widthIco"><a href="https://www.facebook.com/josiassas" target="_blank"
-                            class="fa-facebook">Facebook</a></li>
+                            class="fa-facebook" title="Facebook">Facebook</a></li>
                     <li class="widthIco"><a href="https://br.linkedin.com/in/josiassas" target="_blank"
-                            class="fa-linkedin">Linkedin</a></li>
+                            class="fa-linkedin" title="Linkedin">Linkedin</a></li>
+                    <li class="widthIco"><a
+                            href="https://api.whatsapp.com/send?phone=5575988917018&text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20seu%20site."
+                            target="_blank" class="fa-whatsapp" title="WhatsApp">WhatsApp</a>
+                    </li>
+                    <li class="widthIco"><a href="mailto:josias@vivaldi.net" target="_blank" class="fab fa-envelope"
+                            title="Ligar">Ligar</a>
+                    </li>
+                    <li class="widthIco"><a href="tel:75981966832" target="_blank" class="fab fa-phone"
+                            title="Ligar">Ligar</a>
+                    </li>
                 </ul>
                 <div>
-                    <a href="#resume"><button onclick="openResumeList(event, 'about');">Curriculum</button></a>
+                    <a href="#resume"><button onclick="openResumeList(event, 'about');">About Me</button></a>
                 </div>
             </footer>
         </section>
@@ -59,39 +69,55 @@
                 <button class="col tablink" onclick="openResumeList(event, 'skills');" disabled>Skills</button>
             </div>
 
-            <div id="about" class="container list" style="display:none">
-                <div class="section">
+            <section id="about" class="container list" style="display:none">
 
-                    <img src="/images/avatar.jpg" />
+                <label>Dados Pessoais</label>
+                <ul class="info-personal">
+                    <li>
+                        <span class="title-personal">Name</span>
+                        <span class="value-personal">Josias da Silva Alves Souza</span>
+                    </li>
+                    <li>
+                        <span class="title-personal">Age</span>
+                        <span class="value-personal">23</span>
+                    </li>
+                    <li>
+                        <span class="title-personal">Naturalness</span>
+                        <span class="value-personal">Feira de Santana, Bahia, Brazil</span>
+                    </li>
+                </ul>
 
-                    <span>
-                        <p><label>Brief history</label>He has a technical course in Mechatronics at SENAI Feira de
-                            Santana and a graduate student in Exact and Technological Sciences at the Federal University
-                            of Recôncavo da Bahia.</p>
-                        <a href="http://lattes.cnpq.br/2036636143258139" target="_blank"><button>Curriculum Lattes
-                            </button></a>
-                    </span>
+                <span>
+                    <p><label>Brief history</label>He has a technical course in Mechatronics at SENAI Feira de
+                        Santana and a graduate student in Exact and Technological Sciences at the Federal University
+                        of Recôncavo da Bahia.</p>
+                    <a href="http://lattes.cnpq.br/2036636143258139" target="_blank"><button>Curriculum Lattes
+                        </button></a>
+                </span>
 
-                </div>
-            </div>
+
+            </section>
 
             <div id="experience" class="container list" style="display:none">
                 <div class="section">
                     <h2>Professional Data</h2>
                     <p><a href="https://recodejr.com" target="_blank">Recode Jr.</a> (2018 -
-                        Present)<ul>
-                            <li>Developer (2018)</li>
-                            <li>Managing Director (2019)</li>
-                            <li>Advisor (2020)</li>
-                        </ul>
+                        Present)
+                    <ul>
+                        <li>Developer (2018)</li>
+                        <li>Managing Director (2019)</li>
+                        <li>Advisor (2020)</li>
+                    </ul>
                     </p>
-                    <p>Minix Informatica (2015)<ul>
-                            <li>Computer Network Technician</li>
-                        </ul>
+                    <p>Minix Informatica (2015)
+                    <ul>
+                        <li>Computer Network Technician</li>
+                    </ul>
                     </p>
-                    <p>SEDUC - Feira de Santana (2014)<ul>
-                            <li>Administrative Internship</li>
-                        </ul>
+                    <p>SEDUC - Feira de Santana (2014)
+                    <ul>
+                        <li>Administrative Internship</li>
+                    </ul>
                     </p>
                 </div>
             </div>
@@ -149,6 +175,7 @@
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -156,6 +183,14 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-161579456-1');
+</script>
+-->
+<script type="text/javascript">
+    var coringa = 1;
+    function changeImage() {
+        document.getElementById("img").src = "/images/" + coringa + "img.jpg";
+        coringa != 3 ? coringa++ : coringa = 0;
+    }
 </script>
 
 </html>
