@@ -41,13 +41,13 @@
 </style>
 
 <div class="tab" style="border-radius: 9px 9px 0 0;">
-    <button class="col tablink" onclick="openResumeList(event, 'about');">Sobre</button>
+    <button id="aboutLink" class="col tablink" onclick="openResumeList(event, 'about');">Sobre</button>
     <button class="col tablink" onclick="openResumeList(event, 'experience');">Experiencia</button>
     <button class="col tablink" onclick="openResumeList(event, 'education' );">Formação</button>
     <button class="col tablink" onclick="openResumeList(event, 'skills');" disabled>Habilidades</button>
 </div>
 
-<div style="min-height: 60vh; margin: 1em 3em 0 3em;">
+<div style="min-height: 60vh; margin: 1em 1em 0 1em;">
     <section id="about" class=" list tabcontent container">
 
         <label>Dados Pessoais</label>
@@ -128,16 +128,16 @@
 
         <footer id="footer">
     <span>
-        <a href="/"><button>Pagina Inicial</button></a>
+        <a href="/"><button>Home</button></a>
     </span>
     <span>
         <a href="/pages/sobre"><button>Sobre</button></a>
     </span>
-    <span>
+<!--     <span>
         <a href="#"><button>Blog</button></a>
-    </span>
+    </span> -->
     <span>
-        <a href="/en"><button>English Version</button></a>
+        <a href="/en"><button>English</button></a>
     </span>
 </footer>
     </section>
@@ -184,6 +184,7 @@
     }
 
     window.onload = openResumeList(event, 'about');
+    /* document.getElementById("aboutLink").className.replace(" active", "");   */
 </script>
 
 
