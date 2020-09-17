@@ -1,4 +1,4 @@
-
+<!--Mudar a imagem ao clicar -->
 <script type="text/javascript">
     var coringa = 1;
     function changeImage() {
@@ -7,9 +7,8 @@
     }
 </script>
 
+<!-- Basica do tema -->
 <script>
-    var modal = document.getElementById('resume');
-    var tablink = document.getElementsByClassName("tablink");
 
     if ('addEventListener' in window) {
         window.addEventListener('load', function () {
@@ -18,33 +17,30 @@
         document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
     }
 
-    modal.addEventListener('click', function (e) {
-        if (e.target == this) close();
-    });
+</script>
 
-    function close() {
-        modal.style.transition = "opacity 400ms ease-in;";
-        modal.style.display = 'none';
-    }
-
+<!-- Menu sobre -->
+<script>
+    var tablink = document.getElementsByClassName("tablink");
     function openResumeList(evt, listName) {
-        modal.style.display = 'block';
-        var i, list;
-        list = document.getElementsByClassName("list");
-        for (i = 0; i < list.length; i++) {
-            list[i].style.display = "none";
+        var i, tabcontent;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
         }
-
+        
         for (i = 0; i < tablink.length; i++) {
             tablink[i].className = tablink[i].className.replace(" active", "");
         }
         document.getElementById(listName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+
+    window.onload = openResumeList(event, 'about');
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];

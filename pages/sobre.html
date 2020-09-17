@@ -1,0 +1,98 @@
+---
+layout: default
+title: Sobre Mim
+subtitle: Informações sobre minha pessoa
+---
+<style>
+    #main {
+        padding: 0;
+        padding-bottom: 3em;
+        min-width: 80vw;
+    }
+</style>
+
+<div class="tab" style="border-radius: 9px 9px 0 0;">
+    <button class="col tablink" onclick="openResumeList(event, 'about');">Sobre</button>
+    <button class="col tablink" onclick="openResumeList(event, 'experience');">Experiencia</button>
+    <button class="col tablink" onclick="openResumeList(event, 'education' );">Formação</button>
+    <button class="col tablink" onclick="openResumeList(event, 'skills');" disabled>Habilidades</button>
+</div>
+
+<div style="min-height: 60vh; margin: 1em 3em 0 3em;">
+    <section id="about" class=" list tabcontent container">
+
+        <label>Dados Pessoais</label>
+        <ul class="info-personal">
+            <li>
+                <span class="title-personal">Nome</span>
+                <span class="value-personal">Josias da Silva Alves Souza</span>
+            </li>
+            <li>
+                <span class="title-personal">Idade</span>
+                <span class="value-personal">23</span>
+            </li>
+            <li>
+                <span class="title-personal">Naturalidade</span>
+                <span class="value-personal">Feira de Santana, Bahia</span>
+            </li>
+            <li>
+                <span class="title-personal">Cidade Atual</span>
+                <span class="value-personal">Cruz das Almas, Bahia</span>
+            </li>
+        </ul>
+
+        <p>
+            <label>Breve Histórico</label>
+            Possuo curso Técnico em Mecatrônica e também de Suporte a
+            Hardware e Redes de Computadores pelo SENAI em Feira de Santana - BA
+            e atualmente Graduando em Ciências Exatas e Tecnológicas na Universidade Federal do
+            Recôncavo da Bahia.
+        </p>
+        <div style="text-align: center;">
+            <a href="http://lattes.cnpq.br/2036636143258139" target="_blank">
+                <button>Currículo Lattes</button>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="experience" class="list tabcontent container">
+
+        <h2>Dados Profissionais</h2>
+        <p><a href="https://recodejr.com" target="_blank">Recode Jr.</a> (2018 -
+            2020)
+        <ul>
+            <li>Conselheiro Administrativo (2020)</li>
+            <li>Diretor Administrativo e Financeiro (2019)</li>
+            <li>Desenvolvedor Web (2018)</li>
+        </ul>
+        </p>
+        <p>Minix Informatica (2015)
+        <ul>
+            <li>Técnico em Redes de Computadores</li>
+        </ul>
+        </p>
+        <p>SEDUC - Feira de Santana (2014)
+        <ul>
+            <li>Estagio Administrativo</li>
+        </ul>
+        </p>
+
+    </section>
+
+    <section id="education" class="list tabcontent container">
+
+        <h2>Formação</h2>
+        <label>Superior</label>
+        <li>Bacharel em Ciências Exatas e Tecnológicas, UFRB (Em Andamento).</li>
+        <label>Nível Técnico</label>
+        <li>Técnico em Mecatrônica, SENAI, Bahia. (2016)</li>
+        <li>Suporte a Hardware e Redes de Computadores, SENAI, Bahia. (2013)</li>
+
+    </section>
+
+    <div id="skills" class="container list container">
+
+    </div>
+</div>

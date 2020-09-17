@@ -20,7 +20,14 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/pages/sobre/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/en/</loc>
 <lastmod>2020-09-16T23:46:44-03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/pages.html</loc>
+<lastmod>2020-09-17T19:45:20-03:00</lastmod>
 </url>
 </urlset>

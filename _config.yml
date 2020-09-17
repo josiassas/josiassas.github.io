@@ -125,7 +125,6 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
-  - _posts/yyyy-mm-dd-title-exemple.md
 
 plugins:
   - jekyll-paginate

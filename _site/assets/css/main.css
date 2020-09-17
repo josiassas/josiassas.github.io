@@ -931,6 +931,7 @@ label:after {
     display: none;
     padding: 6px 12px;
     border: none;
+    text-align: justify;
 }
 
 .tablink {
