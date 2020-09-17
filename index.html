@@ -54,7 +54,7 @@
                     <li class="widthIco"><a href="mailto:josias@vivaldi.net" target="_blank" class="fab fa-envelope"
                             title="Ligar">Ligar</a>
                     </li>
-                    <li class="widthIco"><a href="tel:75981966832" target="_blank" class="fab fa-phone"
+                    <li class="widthIco"><a href="tel:75988917018" target="_blank" class="fab fa-phone"
                             title="Ligar">Ligar</a>
                     </li>
                 </ul>
@@ -159,6 +159,15 @@
 </body>
 
 <!-- Scripts -->
+
+<script type="text/javascript">
+    var coringa = 1;
+    function changeImage() {
+        document.getElementById("img").src = "/images/" + coringa + "img.jpg";
+        coringa != 3 ? coringa++ : coringa = 0;
+    }
+</script>
+
 <script>
     var modal = document.getElementById('resume');
     var tablink = document.getElementsByClassName("tablink");
@@ -204,15 +213,6 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-161579456-1');
-</script>
-
-
-<script type="text/javascript">
-    var coringa = 1;
-    function changeImage() {
-        document.getElementById("img").src = "/images/" + coringa + "img.jpg";
-        coringa != 3 ? coringa++ : coringa = 0;
-    }
 </script>
 
 </html>
