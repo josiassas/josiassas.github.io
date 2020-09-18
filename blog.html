@@ -1,0 +1,42 @@
+---
+layout: default
+title: Blog
+subtitle: Artigos em geral
+---
+
+  {% assign posts = paginator.posts | default: site.posts %}
+<section style="width: 100%; display: flex; position: relative;">
+  {% for post in posts %}
+  <div class="card" style="max-width: 50% display: inline-flex;">
+    <a href="{{ post.url | relative_url }}">
+      {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="Card image cap" style="max-width: 100%;">
+      {% endif %}
+    </a>
+
+    <div class="container">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>
+        {% assign excerpt_length = site.excerpt_length | default: 17 %}
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+  {% if paginator.total_pages > 1 %}
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Publicações anteriores</a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Proximas Publicações &rarr;</a>
+    </li>
+    {% endif %}
+  </ul>
+  {% endif %}

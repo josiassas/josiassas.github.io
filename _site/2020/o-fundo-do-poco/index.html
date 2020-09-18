@@ -1,4 +1,38 @@
-<p>Não me lembro de tudo, “sêo” Delegado. Mas parece que o caso foi mais ou menos assim:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+
+    <title>
+        O FUNDO DO POÇO
+    </title>
+
+    <meta charset="utf-8" />
+
+    <meta name="author" content="Josias Souza">
+
+    <meta name="description"
+        content="Uma historia que se repete no BOOM da bolsa de valores.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <link rel="shortcut icon" href="/images/avatar.ico" />
+
+</head>
+
+  <body class="is-loading">
+
+    <div id="wrapper">
+    <!-- Principal -->
+    <section id="main">
+        <div style="padding-bottom:2em; text-align: left;">
+    <button onclick="voltar()"><i class="fa fa-long-arrow-left">   </i>   Pagina Anterior</button>
+</div>
+
+<article>
+    <p>Não me lembro de tudo, “sêo” Delegado. Mas parece que o caso foi mais ou menos assim:
 Há meses que todo mundo só falava em Bolsa de Valores, cotações, riquezas, bancários que tinham investido o 13° salário em ações e agora eram banqueiros. Eu fui dos últimos a entrar: queria antes ter a certeza de que a coisa funcionava. Minha mulher era dona de umas economias em letras de câmbio, eu sempre gostei de economizar; e, além disso, o meu fusca já estava pago.</p>
 
 <p>Um colega apresentou-me ao corretor. Bons tempos. Belgo Mineira de 14 caiu para 12, por causa de umas ações falsas que surgiram no mercado.</p>
@@ -37,3 +71,58 @@ Assim, eu enfiei o dinheiro do fusca na Belgo para aproveitar a “queda técnic
 <p>Dizem, “sêo” Delegado, que empurrei o homem. Não sei. Não me lembro. A única coisa que tenho certeza é que, afinal, o corretor conseguiu achar o fundo do poço.</p>
 
 <p><em>Livro: Bazin, Décio - Faça Fortuna com Ações, Antes que seja tarde.</em></p>
+
+</article>
+
+<script>
+function voltar() {
+    window.history.back();
+}
+</script>
+
+        <footer id="footer" style="margin-left: -2.6em; margin-right: -2.6em; width: auto;">
+    <span style="min-width: 25%; max-width: 50%;">
+        <a href="/"><button>Inicio</button></a>
+    </span>
+    <span>
+        <a href="/sobre"><button>Sobre</button></a>
+    </span>
+    <span>
+        <a href="/blog"><button>Blog</button></a>
+    </span> 
+    <span>
+        <a href="/en"><button>English</button></a>
+    </span>
+</footer>
+    </section>
+</div>
+
+  </body>
+
+  
+
+<!-- Basica do tema -->
+<script>
+
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function () {
+            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+        });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161579456-1');
+</script>
+
+</html>

@@ -190,11 +190,11 @@ h1 {
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 h4 {
@@ -202,11 +202,11 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
+    font-size: .75em;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: .5em;
 }
 
 @media screen and (max-width: 480px) {
@@ -430,7 +430,7 @@ input[type="radio"]+label:before {
 }
 
 .widthIco {
-    max-width: 33.33%;
+    max-width: 25%;
 }
 
 /* List */
@@ -744,6 +744,10 @@ body.is-loading #main {
     border-left: 0;
 }
 
+#footer button {
+    padding: 0 1em 0 1em;
+}
+
 /* Wrapper */
 
 #wrapper {
@@ -961,4 +965,33 @@ label:after {
     background-color: #D3D3D3;
     line-height: 200%;
     padding: 2px 8px;
+}
+
+/* POST */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card .container {
+  padding: 2px 16px;
+}
+
+article img {
+    max-width: 100%;
+}
+
+article a {
+    color: #000;
 }

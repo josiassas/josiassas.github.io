@@ -21,57 +21,6 @@ share-links-active:
 excerpt_length: 17
 
 
-# --- Seção Estatísticas da Web --- #
-
-# Preencha seu ID gtag.js do Google Analytics para rastrear seu site usando gtag
-#gtag: ""
-
-# Preencha seu ID do Google Analytics para rastrear seu site usando o GA
-#google_analytics: ""
-
-# Google Tag Manager ID
-#gtm: ""
-
-# Matomo (aka Piwik) Estatísticas da Web
-# Remova o comentário da seção a seguir para ativar o Matomo. O parâmetro opt-out controla
-# se você deseja ou não permitir que os usuários desative o rastreamento.
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
-
-# --- Comentários --- #
-
-# Para usar os comentários do Disqus, inscreva-se em https://disqus.com e preencha seu nome abreviado do Disqus (NÃO o ID do usuário)
-#disqus: ""
-
-# Para usar os comentários do Facebook, crie um aplicativo do Facebook e preencha o ID do aplicativo do Facebook
-#fb_comment_id: ""
-
-# Para usar comentários de enunciados: (0) descomente a seção a seguir, (1) preencha
-# "repositório" (verifique se o repositório é público), (2) Ative os problemas no seu repositório,
-# (3) Instale o aplicativo Expressões no seu repositório https://github.com/apps/utterances
-# Veja mais detalhes sobre os parâmetros abaixo em https://utteranc.es/
-#utterances:
-#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  issue-term: title   # Mapping between blog posts and GitHub issues
-#  theme: github-light # Utterances theme
-#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
-
-# Para usar os comentários do Staticman, primeiro convide `staticmanlab` como colaborador para o seu repositório e
-# aceite o convite acessando `https://staticman3.herokuapp.com/v3/connect/github/ <nome do usuário> / <nome do repositório>`.
-# Em seguida, remova o comentário da seção a seguir e preencha "repositório", "ramificação" e "ponto final".
-# Se você deseja usar o reCaptcha para staticman (opcional para proteção contra spam), preencha
-# nos parâmetros "siteKey" e "secret" abaixo e também em `staticman.yml`.
-# Veja mais detalhes em https://staticman.net/
-#staticman:
-#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
-#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-#  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
-#  reCaptcha:
-#    siteKey  : # Use your own site key, you need to apply for one on Google
-#    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
-
 # --- Misc --- #
 
 # Caractere usado para separar o título e a descrição do site no título do documento HTML

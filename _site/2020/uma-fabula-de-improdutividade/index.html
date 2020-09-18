@@ -1,4 +1,38 @@
-<p>João é inteligente e nasceu numa família de classe alta. Estudou em boas escolas e entrou para uma universidade pública, gratuita, no curso de Engenharia. Formado, viu que os melhores salários iniciais de engenheiros estavam em R$ 5 mil. Fez concurso para um cargo de nível médio num tribunal: salário de R$ 9 mil mais gratificações, aposentadoria integral, estabilidade, expediente de seis horas. O contribuinte custeou a formação de um engenheiro e recebeu um arquivador de processos sobrerremunerado. Amanhã João estará em frente ao Congresso, com seus colegas, todos em greve por aumento salarial. Não terá o dia de trabalho descontado nem se sente remotamente ameaçado de demissão.</p>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+
+    <title>
+        Improdutividade
+    </title>
+
+    <meta charset="utf-8" />
+
+    <meta name="author" content="Josias Souza">
+
+    <meta name="description"
+        content="Uma fabula de improdutividade.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <link rel="shortcut icon" href="/images/avatar.ico" />
+
+</head>
+
+  <body class="is-loading">
+
+    <div id="wrapper">
+    <!-- Principal -->
+    <section id="main">
+        <div style="padding-bottom:2em; text-align: left;">
+    <button onclick="voltar()"><i class="fa fa-long-arrow-left">   </i>   Pagina Anterior</button>
+</div>
+
+<article>
+    <p>João é inteligente e nasceu numa família de classe alta. Estudou em boas escolas e entrou para uma universidade pública, gratuita, no curso de Engenharia. Formado, viu que os melhores salários iniciais de engenheiros estavam em R$ 5 mil. Fez concurso para um cargo de nível médio num tribunal: salário de R$ 9 mil mais gratificações, aposentadoria integral, estabilidade, expediente de seis horas. O contribuinte custeou a formação de um engenheiro e recebeu um arquivador de processos sobrerremunerado. Amanhã João estará em frente ao Congresso, com seus colegas, todos em greve por aumento salarial. Não terá o dia de trabalho descontado nem se sente remotamente ameaçado de demissão.</p>
 
 <p>Pedro não tem muito talento intelectual. Mas sua família pôde pagar uma boa escola, o que lhe garantiu uma vaga num curso não muito concorrido em universidade pública. Carente de habilidades acadêmicas, Pedro não se adaptou e mudou de curso duas vezes, deixando para trás centenas de horas-aula desperdiçadas e duas vagas que poderiam ter sido ocupadas por outros estudantes que jamais terão acesso àquela universidade. Foi fácil desistir dos cursos, pois Pedro nada pagou por eles.</p>
 
@@ -23,3 +57,58 @@
 <p>Nenhum dos personagens acima citados tem comportamento ilegal. Eles jogam o jogo de acordo com as regras que estão postas. O erro está nas regras. Mudá-las requer superar as dificuldades das decisões coletivas. Não mudá-las implica continuar com talentos profissionais e dinheiro público mal alocados, empregos improdutivos, potenciais inexplorados, gasto público excessivo, oportunidades perdidas, incentivos errados. Uma fábula de improdutividade.</p>
 
 <p>Fonte (Acesso em Junho de 2020): <a href="https://opiniao.estadao.com.br/noticias/geral,uma-fabula-de--improdutividade,1759423" target="_blank">Estadão</a></p>
+
+</article>
+
+<script>
+function voltar() {
+    window.history.back();
+}
+</script>
+
+        <footer id="footer" style="margin-left: -2.6em; margin-right: -2.6em; width: auto;">
+    <span style="min-width: 25%; max-width: 50%;">
+        <a href="/"><button>Inicio</button></a>
+    </span>
+    <span>
+        <a href="/sobre"><button>Sobre</button></a>
+    </span>
+    <span>
+        <a href="/blog"><button>Blog</button></a>
+    </span> 
+    <span>
+        <a href="/en"><button>English</button></a>
+    </span>
+</footer>
+    </section>
+</div>
+
+  </body>
+
+  
+
+<!-- Basica do tema -->
+<script>
+
+    if ('addEventListener' in window) {
+        window.addEventListener('load', function () {
+            document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+        });
+        document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+
+</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161579456-1');
+</script>
+
+</html>

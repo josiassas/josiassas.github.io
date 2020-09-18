@@ -1,3 +1,4 @@
+{% if page.url == "/" or page.url == "/en/" %}
 <!--Mudar a imagem ao clicar -->
 <script type="text/javascript">
     var coringa = 1;
@@ -6,6 +7,7 @@
         coringa != 3 ? coringa++ : coringa = 0;
     }
 </script>
+{% endif %}
 
 <!-- Basica do tema -->
 <script>
@@ -19,6 +21,7 @@
 
 </script>
 
+{% if page.url == "/sobre/" or page.url == "/en/about/" %}
 <!-- Menu sobre -->
 <script>
     var tablink = document.getElementsByClassName("tablink");
@@ -39,7 +42,7 @@
     window.onload = openResumeList(event, 'about');
     /* document.getElementById("aboutLink").className.replace(" active", "");   */
 </script>
-
+{% endif %}
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161579456-1"></script>
