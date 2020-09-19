@@ -4,13 +4,15 @@ title: Blog
 subtitle: Artigos em geral
 ---
 
-  {% assign posts = paginator.posts | default: site.posts %}
-<section style="width: 100%; display: flex; position: relative;">
+{% assign posts = paginator.posts | default: site.posts %}
+<div style="display: inline-block;;">
+
   {% for post in posts %}
-  <div class="card" style="max-width: 50% display: inline-flex;">
+
+  <div class="card">
     <a href="{{ post.url | relative_url }}">
       {% if post.image %}
-      <img src="{{ post.image | relative_url }}" alt="Card image cap" style="max-width: 100%;">
+      <img src="{{ post.image | relative_url }}" alt="Card image cap" style="width: 100%; height: 25vh;">
       {% endif %}
     </a>
 
@@ -23,9 +25,11 @@ subtitle: Artigos em geral
       </p>
     </div>
   </div>
-  {% endfor %}
-</section>
 
+  {% endfor %}
+
+</div>
+<!-- 
   {% if paginator.total_pages > 1 %}
   <ul class="pagination">
     {% if paginator.previous_page %}
@@ -40,3 +44,4 @@ subtitle: Artigos em geral
     {% endif %}
   </ul>
   {% endif %}
+ -->
