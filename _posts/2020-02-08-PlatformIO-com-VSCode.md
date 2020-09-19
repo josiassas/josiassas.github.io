@@ -4,10 +4,6 @@ title:  "Arduino e VSCode"
 author: josiassas
 tags: [ Arduino, PlatformIO, VSCode ]
 image: assets/img/3.png
-beforetoc: "Firmware Marlim no Visual Studio Code."
-toc: true
-featured: true
-hidden: false
 subtitle: Como programar o arduino utilizando vs code.
 ---
 Se você não consegue se acostumar a utilizar a IDE do <a title="Arduino" href="https://www.arduino.cc/" target="_blank">Arduino</a> essa publicação será sua emancipação.

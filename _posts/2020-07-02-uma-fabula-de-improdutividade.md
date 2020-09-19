@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Improdutividade
-tema: Para pensar
-gh-badge: [star, fork, follow]
 cover-img: /assets/img/fable.jpeg
 image: /assets/img/fable.jpg
 tags: [Fabula]
