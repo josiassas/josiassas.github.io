@@ -16,4 +16,7 @@
 
     <link rel="shortcut icon" href="/images/avatar.ico" />
 
+    <meta property="og:image" content="{% if page.image %}{{ site.url}}{{ page.image }}{% else %}{{ site.url}}/images/0img.jpg{% endif %}">
+    <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}">
+
 </head>

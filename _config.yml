@@ -74,6 +74,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - josiassas-theme.gemspec
 
 plugins:
   - jekyll-paginate
